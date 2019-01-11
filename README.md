@@ -1,5 +1,5 @@
 # Solutions :octocat:
-`C++` solutions for online algorithm problems from LeetCode and HackerRank.
+`JS solutions for online algorithm problems from LeetCode and HackerRank.
 
 <br />
 
@@ -18,7 +18,7 @@ Output: 7 -> 0 -> 8
 
 <br />
 
-2. -[X] **2.** [Revese Intergers](LeetCode/reverse-integers.js) [2]
+2. -[X] **2.** [Revese Intergers](LeetCode/reverse-integers.js) [71]
 
 You are given a 32-bit integer. Reverse the order of the digits of the integer. Must return a number between -2^31 and 2^31 -1, but if not then return 0.
 
