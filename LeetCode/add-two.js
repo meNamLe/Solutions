@@ -6,7 +6,7 @@ var twoSum = function(nums, target) {
           number is a property in dictionary
               if true return [ dictionary[number], current index ]
               else - set target - number as a key and current index as value
-              
+        
     */
   
   const dictionary = {};
