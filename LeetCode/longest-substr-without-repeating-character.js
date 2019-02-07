@@ -14,7 +14,7 @@ var lengthOfLongestSubstring = function(s) {
                 delete character at index i from hash
                 i = i + 1
         
-        return anshttps://leetcode.com/problemset/all/
+        return ans
     */
     
     const hash = {};
