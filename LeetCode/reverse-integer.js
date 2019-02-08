@@ -1,28 +1,26 @@
 var reverse = function(x) {
     /*
-        create a string with x
-        
-        if sign is negative 
-            assign sign to to negative
-        
-        loop through the str from end to start
-            adding elements to num
+        while loop x !== 0
+            add (x % 10) to res
+            x = floored(x / 10)
             
-        convert num to number and multiply the sign
-        return if not between -2^31 and 2^31-1 
+        return in regards to conditions
     */
-    var str = String(x);
-    var sign = 1;
-    if (str[0] == '-') {
-        sign = -1;
-        str = str.substring(1, str.length);
+    const sign = Math.sign(x);
+    const pow = Math.pow(2,31) * sign;
+    x = Math.abs(x);
+    let res = '';
+    
+    while(x !== 0){
+        res += x % 10;
+        x = Math.floor(x / 10);
     }
     
-    var num = '';
-    for (var i = str.length-1; i >= 0; i--) {
-        num += str[i];
+    res = Number(res) * sign;
+    if(sign > 0) {
+        return res > pow ? 0 : res;
+    } else {
+        return res < pow ? 0 : res;
     }
     
-    num = sign * Number(num);
-    return (num > 2147483647 || num < -2147483648) ? 0 : num;
 };
