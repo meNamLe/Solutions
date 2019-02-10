@@ -7,6 +7,7 @@ var isPalindrome = function(x) {
     */
     
     /*
+    
         Heres my response
             return false if x < 0
             return true if x < 10
