@@ -7,7 +7,7 @@ var isPalindrome = function(x) {
     */
     
     /*
-    
+
         Heres my response
             return false if x < 0
             return true if x < 10
@@ -19,6 +19,7 @@ var isPalindrome = function(x) {
                 temp = floored(temp / 10)
             
             return x === result
+            
     */
     if(x < 0) return false;
     if(x < 10) return true;
